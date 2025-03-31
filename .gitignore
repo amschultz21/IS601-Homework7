@@ -1,8 +1,17 @@
-venv
-images
-.python_history
+# Python virtual environment
+venv/
 __pycache__/
-*.py[cod]
-*$py.class
-qr_codes
-*.so
+*.pyc
+
+# Docker files
+*.log
+*.pid
+
+# Ignore QR code image output
+*.png
+
+# VSCode settings (optional)
+.vscode/
+
+# macOS system files (optional)
+.DS_Store
