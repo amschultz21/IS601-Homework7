@@ -17,4 +17,3 @@ You can scan the QR code below with your phone to go directly to my GitHub profi
 The image below shows the log output when the QR code is successfully created.
 
 ![Log Screenshot](log_screenshot.png)
- 
