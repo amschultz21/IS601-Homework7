@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  qr-generator:
+    build: .
+    container_name: my-qr-generator
+    volumes:
+      - .:/app
+    command: python qr_generator.py
