@@ -1,12 +1,16 @@
+import os
 import qrcode
 
-# Replace with your actual GitHub URL
-github_url = "https://github.com/amschultz21"
+# Your GitHub URL
+github_url = "https://github.com/yourusername"
 
-# Generate QR Code
+# Create output directory if it doesn't exist
+output_dir = "output"
+os.makedirs(output_dir, exist_ok=True)
+
+# Save the QR code in the output folder
+output_path = os.path.join(output_dir, "github_qr.png")
 qr = qrcode.make(github_url)
+qr.save(output_path)
 
-# Save the QR Code to a file
-qr.save("github_qr.png")
-
-print("QR code generated and saved as github_qr.png!")
+print(f"✅ QR code saved at: {output_path}")
