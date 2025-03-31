@@ -11,3 +11,9 @@ This project generates a QR code that links to my GitHub homepage using Python a
 You can scan the QR code below with your phone to go directly to my GitHub profile:
 
 ![QR Code to GitHub](github_qr.png)
+
+## ✅ Log Output
+
+The image below shows the log output when the QR code is successfully created.
+
+![Log Screenshot](log_screenshot.png)

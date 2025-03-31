@@ -9,6 +9,8 @@ __pycache__/
 
 # Ignore QR code image output
 *.png
+!log_screenshot.png
+
 
 # VSCode settings (optional)
 .vscode/
