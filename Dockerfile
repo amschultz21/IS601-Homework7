@@ -6,9 +6,10 @@ WORKDIR /app
 
 # Copy Python script to the container
 COPY qr_generator.py .
+COPY requirements.txt .
 
 # Install required Python packages
-RUN pip install qrcode[pil]
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Run the script
 CMD ["python", "qr_generator.py"]
